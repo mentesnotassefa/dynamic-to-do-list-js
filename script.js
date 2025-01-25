@@ -79,7 +79,11 @@ removeButton.onclick = function() {
 
 
         // Append the remove button to the list item
+        removeButton.setAttribute('id', 'removeButton'); // added for demonstration purposes
         listItem.appendChild(removeButton);
+        //add a class to both list and remove buttons.
+        listItem.classList.add('task-item');
+        removeButton.classList.add('remove-btn');
 
         // Append the list item to the task list
         taskList.appendChild(listItem);
